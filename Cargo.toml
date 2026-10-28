@@ -1,0 +1,25 @@
+[package]
+name = "hellocar"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.90"
+description = "Linux wireless HiCar receiver for HarmonyOS 4.2"
+license = "MIT"
+repository = "https://github.com/Aki894/HelloCar"
+readme = "README.md"
+keywords = ["hicar", "linux", "automotive", "projection"]
+categories = ["network-programming", "multimedia"]
+
+[dependencies]
+libloading = "=0.8.9"
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.145"
+
+[target.'cfg(unix)'.dependencies]
+libc = "=0.2.177"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"

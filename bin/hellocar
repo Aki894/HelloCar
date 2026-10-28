@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+export HELLOCAR_AUTH_LIBRARY=${HELLOCAR_AUTH_LIBRARY:-"$root/lib/libhellocar_hichain.so"}
+export LD_LIBRARY_PATH="$root/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+exec "$root/libexec/hellocar" "$@"

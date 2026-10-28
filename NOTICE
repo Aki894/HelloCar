@@ -1,0 +1,30 @@
+HelloCar
+Copyright notices for the project code are retained in LICENSE.
+
+The native authentication adapter builds pinned open-source dependencies.
+Each retains its original copyright and license; these are not relicensed MIT.
+Pinned source records are in native/sources.json:
+
+OpenHarmony security_deviceauth
+Commit 552edb521d0bd7c17f2dab2791e7cdc3de284405
+Apache License 2.0
+https://github.com/openharmony/security_deviceauth/blob/552edb521d0bd7c17f2dab2791e7cdc3de284405/LICENSE
+
+OpenHarmony security_huks
+Commit 89f0842ef2600a0d9b5351ef11e1f8acab8ff439
+Apache License 2.0
+https://github.com/openharmony/security_huks/blob/89f0842ef2600a0d9b5351ef11e1f8acab8ff439/LICENSE
+
+OpenHarmony third_party_bounds_checking_function (securec)
+Commit ebef58f44419d0694e984d25acac231e737d60ff
+Mulan Permissive Software License, Version 2 (MulanPSL-2.0)
+https://github.com/openharmony/third_party_bounds_checking_function/blob/ebef58f44419d0694e984d25acac231e737d60ff/LICENSE
+
+Rust dependencies are pinned in Cargo.lock. Binary packages must retain the
+original notices/licenses for included native and Rust dependencies, including
+any redistributed OpenSSL, mbed TLS, cJSON and system runtime libraries.
+System-installed FFmpeg remains under its distribution's license and build
+configuration. See the package license directory and manifest for actual files.
+
+HiCar, Huawei and HarmonyOS are trademarks of their respective owners.
+HelloCar is an independent interoperability project.

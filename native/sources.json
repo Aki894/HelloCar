@@ -1,0 +1,5 @@
+{
+  "deviceauth": {"repository": "https://github.com/openharmony/security_deviceauth.git", "commit": "552edb521d0bd7c17f2dab2791e7cdc3de284405"},
+  "huks": {"repository": "https://github.com/openharmony/security_huks.git", "commit": "89f0842ef2600a0d9b5351ef11e1f8acab8ff439"},
+  "securec": {"repository": "https://github.com/openharmony/third_party_bounds_checking_function.git", "commit": "ebef58f44419d0694e984d25acac231e737d60ff"}
+}
